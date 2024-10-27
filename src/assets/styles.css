@@ -26,7 +26,7 @@ body {
 .sidebar {
     display: flex;
     flex-direction: column;
-    margin-right: 500px; /* Reduced space for better alignment */
+    margin-right: 350px; /* Reduced space for better alignment */
     padding-left: 50px;
 }
 
@@ -53,7 +53,7 @@ body {
     font-size: 1.25rem;
     color: #cbf493;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     transform-origin: center; /* Keep faces centered */
 }
 
