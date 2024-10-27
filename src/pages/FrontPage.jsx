@@ -1,6 +1,8 @@
+import logo from '/src/assets/logo.png'
+
 const FrontPage = () => (
     <div>
-        <img src="/src/assets/logo.png" alt="logo" />
+        <img src={logo} alt="logo" />
     </div>
 );
 
