@@ -3,16 +3,32 @@ const LeftPage = () => (
         <h1 className="text-3xl font-bold mb-6">WEBSITES WE MADE</h1>
         <ul className="space-y-4 w-full max-w-md">
             <li>
-                <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">Website 1</button>
+                <a href="https://solcock.xyz" target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">
+                        Cock
+                    </button>
+                </a>
             </li>
             <li>
-                <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">Website 2</button>
+                <a href="https://cigbuttcoin.com" target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">
+                        Cigarette Butt
+                    </button>
+                </a>
             </li>
             <li>
-                <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">Website 3</button>
+                <a href="https://renaldu.xyz" target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">
+                        Renaldu
+                    </button>
+                </a>
             </li>
             <li>
-                <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">Website 4</button>
+                <a href="https://dbilly.fun" target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-outline border-customGreen text-customGreen hover:bg-customGreen hover:text-customBlue w-full">
+                        Dark Billy
+                    </button>
+                </a>
             </li>
         </ul>
     </div>
