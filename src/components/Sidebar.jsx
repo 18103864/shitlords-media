@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Sidebar = ({ setCurrentFace }) => {
@@ -15,7 +15,9 @@ const Sidebar = ({ setCurrentFace }) => {
     };
 
     return (
-        <div className="sidebar flex flex-col space-y-2 p-4">
+        <div className="relative">
+            {/* sidebar */}
+            <div className="sidebar w-full flex flex-col space-y-2 p-4">
             {faces.map(face => (
                 <Link key={face} onClick={() => setCurrentFace(face)}>
                     <button className='buttoncolors btn btn-outline text-customGreen btn-block lg:btn-lg md:btn-md sm:btn-sm'>
@@ -23,6 +25,8 @@ const Sidebar = ({ setCurrentFace }) => {
                     </button>
                 </Link>
             ))}
+
+            </div>
         </div>
     );
 };

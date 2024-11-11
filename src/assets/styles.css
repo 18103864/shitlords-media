@@ -1,33 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
-:root{
-    --size: 600px;
+/* Default size */
+:root {
+    --size: 650px;
+    --translate-z: calc(var(--size) / 2); /* Default translateZ value */
 }
+
 body {
-    margin: 0;
-    display: flex;
-    place-items: center;
-    min-height: 90vh;
     font-family: 'Audiowide', cursive; /* Apply Audiowide font */
+}
+
+@media (max-width: 1024px) {
+    /* Medium screen (tablets, small laptops) */
+    :root {
+        --size: 550px;
+        --translate-z: calc(var(--size) / 2); /* TranslateZ is half of the new size */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Small screen (portrait tablets, phones) */
+    :root {
+        --size: 400px;
+        --translate-z: calc(var(--size) / 2); /* TranslateZ is half of the new size */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small devices (small phones, portrait phones) */
+    :root {
+        --size: 320px;
+        --translate-z: calc(var(--size) / 2); /* TranslateZ is half of the new size */
+    }
+}
+
+@media (max-width: 320px) {
+    /* Extremely small devices (old phones, very small screens) */
+    :root {
+        --size: 250px;
+        --translate-z: calc(var(--size) / 2); /* TranslateZ is half of the new size */
+    }
 }
 
 .app {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
-    justify-content: flex-start; /* Align items to the start */
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; /* Center the cube on the page */
 }
 
 .cube-containerr {
     perspective: 2000px;
     width: var(--size); /* Adjusted cube container size */
-    height: var(--size) /* Adjusted cube container size */
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    margin-right: 350px; /* Reduced space for better alignment */
-    padding-left: 50px;
+    height: var(--size); /* Adjusted cube container size */
 }
 
 .cubee {
@@ -37,10 +62,6 @@ body {
     transform-style: preserve-3d;
     transform: rotateX(-15deg) rotateY(15deg);
     transition: all 0.85s cubic-bezier(1, -0.75, 0.5, 1.2);
-
-    /* transform: rotateX(-90deg); */ 
-    /* transform: rotateY(180deg); */
-    /* transform: rotateY(-90deg); */
 }
 
 .face {
@@ -57,18 +78,10 @@ body {
     transform-origin: center; /* Keep faces centered */
 }
 
-.front  { transform: translateZ(300px); } 
-.back   { transform: rotateY(180deg) translateZ(300px); } 
-.left   { transform: rotateY(-90deg) translateZ(300px); } 
-.right  { transform: rotateY(90deg) translateZ(300px); } 
-.top    { transform: rotateX(90deg) translateZ(300px); } 
-.bottom { transform: rotateX(-90deg) translateZ(300px); } 
-
-.buttoncolors{
-    border: 1px solid #b2fd4b;
-    box-shadow: inset 0 0 10px #cbf493;
-}
-
-.buttoncolors:hover{
-    background-color: #cbf493;
-}
+/* Cube faces positioning */
+.front  { transform: translateZ(var(--translate-z)); } 
+.back   { transform: rotateY(180deg) translateZ(var(--translate-z)); } 
+.left   { transform: rotateY(-90deg) translateZ(var(--translate-z)); } 
+.right  { transform: rotateY(90deg) translateZ(var(--translate-z)); } 
+.top    { transform: rotateX(90deg) translateZ(var(--translate-z)); } 
+.bottom { transform: rotateX(-90deg) translateZ(var(--translate-z)); } 
