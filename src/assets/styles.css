@@ -2,7 +2,7 @@
 
 /* Default size */
 :root {
-    --size: 650px;
+    --size: 600px;
     --translate-z: calc(var(--size) / 2); /* Default translateZ value */
 }
 
@@ -13,7 +13,7 @@ body {
 @media (max-width: 1024px) {
     /* Medium screen (tablets, small laptops) */
     :root {
-        --size: 550px;
+        --size: 500px;
         --translate-z: calc(var(--size) / 2); /* TranslateZ is half of the new size */
     }
 }
