@@ -41,14 +41,14 @@ const RightPage = () => (
 
                     {/* Row 5 */}
                     <tr className="border-b hover:bg-customGreen hover:text-customBlue">
-                        <td className="p-2 text-sm sm:text-base md:text-lg">WEBSITE</td>
-                        <td className="p-2 text-sm sm:text-base md:text-lg">1.5 SOL</td>
+                        <td className="p-2 text-sm sm:text-base md:text-lg">WEBSITES(DEPENDS ON REQUIREMENTS)</td>
+                        <td className="p-2 text-sm sm:text-base md:text-lg">1-4 SOL</td>
                     </tr>
 
                     {/* Row 6 */}
                     <tr className="border-b hover:bg-customGreen hover:text-customBlue">
                         <td className="p-2 text-sm sm:text-base md:text-lg">WEBSITE WITH MEME-GEN/PFP MAKER</td>
-                        <td className="p-2 text-sm sm:text-base md:text-lg">4 SOL</td>
+                        <td className="p-2 text-sm sm:text-base md:text-lg">3 SOL</td>
                     </tr>
                 </tbody>
             </table>

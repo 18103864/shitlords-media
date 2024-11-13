@@ -20,7 +20,7 @@ const Sidebar = ({ setCurrentFace }) => {
             <div className="sidebar w-full flex flex-col space-y-2 p-4">
             {faces.map(face => (
                 <Link key={face} onClick={() => setCurrentFace(face)}>
-                    <button className='buttoncolors btn btn-outline text-customGreen btn-block lg:btn-lg md:btn-md sm:btn-sm'>
+                    <button className='buttoncolors btn btn-outline text-customGreen hover:bg-customGreen hover:text-customBlue btn-block lg:btn-lg md:btn-md sm:btn-sm'>
                         {faceTextMap[face]} {/* Display text based on face */}
                     </button>
                 </Link>

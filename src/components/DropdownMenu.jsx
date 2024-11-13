@@ -28,7 +28,7 @@ const DropdownMenu = ({ isSidebarOpen, toggleSidebar, setCurrentFace }) => {
             {/* Hamburger Icon (click to toggle dropdown menu) */}
             <button 
                 onClick={toggleDropdown}
-                className="text-black p-2 bg-[#b2fd4b] rounded-md"
+                className="text-black p-2 bg-[#b2fd4b] rounded-md "
             >
                 ☰
             </button>
@@ -39,7 +39,7 @@ const DropdownMenu = ({ isSidebarOpen, toggleSidebar, setCurrentFace }) => {
                     <ul>
                         {faces.map(face => (
                             <Link key={face} onClick={() => setCurrentFace(face)}>
-                                <li className="p-2 hover:bg-[#cbf493] cursor-pointer">{faceTextMap[face]} {/* Display text based on face */}</li>
+                                <li className="p-2 hover:bg-[#cbf493] hover:text-customBlue cursor-pointer">{faceTextMap[face]} {/* Display text based on face */}</li>
                             </Link>
                         ))}
                     </ul>
