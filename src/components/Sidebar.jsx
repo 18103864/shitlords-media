@@ -11,7 +11,7 @@ const Sidebar = ({ setCurrentFace }) => {
         right: 'PRICING',
         bottom: 'MEMES',
         left: 'WEBSITES',
-        back: 'SOCIALS',
+        back: 'CONTACT US',
     };
 
     return (

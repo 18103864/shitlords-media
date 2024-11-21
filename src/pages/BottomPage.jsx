@@ -1,9 +1,9 @@
-import meme1 from '../assets/meme1.png'
-import meme2 from '../assets/meme2.png'
-import meme3 from '../assets/meme3.png'
-import meme4 from '../assets/meme4.png'
-import meme5 from '../assets/meme5.png'
-import meme6 from '../assets/meme6.png'
+import meme1 from '../assets/meme1.jpg'
+import meme2 from '../assets/meme2.jpg'
+import meme3 from '../assets/meme3.jpg'
+import meme4 from '../assets/meme4.jpg'
+import meme5 from '../assets/meme5.jpg'
+import meme6 from '../assets/meme6.jpg'
 
 const BottomPage = () => (
     <div className="h-full flex flex-col items-center justify-center p-4 gap-8">

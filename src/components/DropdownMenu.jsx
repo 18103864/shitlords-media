@@ -12,7 +12,7 @@ const DropdownMenu = ({ isSidebarOpen, toggleSidebar, setCurrentFace }) => {
         right: 'PRICING',
         bottom: 'MEMES',
         left: 'WEBSITES',
-        back: 'SOCIALS',
+        back: 'CONTACT US',
     };
 
 
